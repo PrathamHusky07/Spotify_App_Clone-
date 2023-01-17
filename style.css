@@ -24,6 +24,61 @@ nav ul{
     color: white;
 }
 
+nav ul li{
+    padding: 0 14px;
+
+}
+
 .brand img{
     width: 90px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 80vh ;
+    background-color: black;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70% ;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('downtown.jpg');
+
+}
+
+.bottom {
+    position: sticky;
+    height: 75px;
+    background-color: skyblue;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column ;
+    padding: 34px;
+
+}
+
+.icons{
+    margin-top: 13px;
+
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myDisplayBar{
+    width: 80vw;
+    text-align: center ;
 }
