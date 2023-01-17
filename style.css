@@ -24,6 +24,19 @@ nav ul{
     color: white;
 }
 
+nav ul li{
+    padding: 0 14px;
+
+}
+
 .brand img{
     width: 90px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
