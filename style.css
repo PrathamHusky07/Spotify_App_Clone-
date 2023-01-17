@@ -81,6 +81,11 @@ nav ul li{
 #myDisplayBar{
     width: 80vw;
     text-align: center ;
+    cursor: pointer ;
+}
+
+.songItemContainer{
+    margin-top: 64px;
 }
 
 .songItem{
@@ -88,7 +93,6 @@ nav ul li{
     display: flex;
     background-color: white;
     color: black;
-    
     margin: 12px 0;
     justify-content: space-between;
     align-items: center;
@@ -106,5 +110,19 @@ nav ul li{
 
 .timestamp{
     margin: 0 23px;
+}
 
+.timestamp i {
+    cursor: pointer; 
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Oswald', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
