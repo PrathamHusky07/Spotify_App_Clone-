@@ -8,21 +8,22 @@ let gif = document.getElementById('gif');
 let songItems = Array.from(document.getElementsByClassName('songItem')) ;
 
 let songs = [
-    {songName: 'Castle of Glass', filepath: "Songs/castleofglass.mp3", coverPath: "lp2.jpg"},
-    {songName: 'Blinding Lights', filepath: "Songs/blindinglights.mp3", coverPath: "lp2.jpg"},
-    {songName: 'Bombay Dreams', filepath: "Songs/bombaydreams.mp3.", coverPath: "lp2.jpg"},
-    {songName: 'Closer', filepath: "Songs/closer.mp3", coverPath: "lp2.jpg"},
-    {songName: 'Kesariya', filepath: "Songs/kesariya.mp3", coverPath: "lp2.jpg"},
-    {songName: 'High on Life', filepath: "Songs/highonlife.mp3", coverPath: "lp2.jpg"},
-    {songName: 'Aaoge Tum Kabhi', filepath: "Songs/aaogetumkabhi.mp3", coverPath: "lp2.jpg"},
-    {songName: 'Perfect', filepath: "Songs/perfect.mp3", coverPath: "lp2.jpg"},
-    {songName: 'Let Me Love You', filepath: "Songs/letmeloveyou.mp3", coverPath: "lp2.jpg"},
-    {songName: 'Bumpy Ride', filepath: "Songs/bumpyride.mp3", coverPath: "lp2.jpg"},
+    {songName: 'Castle of Glass - Linkin Park', filepath: "Songs/castleofglass.mp3", coverPath: "Covers/lp2.jpg"},
+    {songName: 'Blinding Lights - The Weeknd', filepath: "Songs/blindinglights.mp3", coverPath: "Covers/l2.jpg"},
+    {songName: 'Bombay Dreams - Ft KSHMR & Kavita Seth', filepath: "Songs/bombaydreams.mp3", coverPath: "Covers/l3.jpg"},
+    {songName: 'Closer - The Chainsmokers', filepath: "Songs/closer.mp3", coverPath: "Covers/l4.jpg"},
+    {songName: 'Kesariya - Arijit Singh, Pritam & Amitabh Bhattacharya', filepath: "Songs/kesariya.mp3", coverPath: "Covers/l5.jpg"},
+    {songName: 'High on Life- Ft Martin Garrix & Bonn', filepath: "Songs/highonlife.mp3", coverPath: "Covers/l6.jpg"},
+    {songName: 'Aaoge Tum Kabhi - The Local Train', filepath: "Songs/aaogetumkabhi.mp3", coverPath: "Covers/l7.jpg"},
+    {songName: 'Perfect - Ed Sheeran', filepath: "Songs/perfect.mp3", coverPath: "Covers/l8.jpg"},
+    {songName: 'Let Me Love You - DJ Snake', filepath: "Songs/letmeloveyou.mp3", coverPath: "Covers/l9.jpg"},
+    {songName: 'Bumpy Ride - Mohombi', filepath: "Songs/bumpyride.mp3", coverPath: "Covers/l10.jpg"},
 ]
 
 songItems.forEach((element,i)=>{
     console.log(element,i);
-    element.getElementsByTagName("img")[0].src = songs[i].filepath;
+    element.getElementsByTagName("img")[0].src = songs[i].coverPath;
+    element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
 })
 
 
